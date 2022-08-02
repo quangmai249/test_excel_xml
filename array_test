@@ -1,0 +1,75 @@
+array (
+  0 =>
+  array (
+    0 =>
+    array (
+      'A' => 1.0,
+      'B' => 'Đâu là cách để xem chuẩn đầu ra của môn học, nội dung học của từng buổi học, cấu trúc đánh giá điểm của một môn học.',
+      'C' => 'A',
+      'D' => 'Syllabus',
+      'E' => '',
+      'F' => '0',
+    ),
+    1 =>
+    array (
+      'A' => NULL,
+      'B' => NULL,
+      'C' => 'B',
+      'D' => 'Assignment',
+      'E' => '',
+      'F' => '',
+    ),
+    2 =>
+    array (
+      'A' => NULL,
+      'B' => NULL,
+      'C' => 'C',
+      'D' => 'Xem trên AP',
+      'E' => '',
+      'F' => '',
+    ),
+    3 =>
+    array (
+      'A' => NULL,
+      'B' => NULL,
+      'C' => 'D',
+      'D' => 'Tất cả đáp án trên đều đúng',
+      'E' => 'A',
+      'F' => '',
+    ),
+    4 =>
+    array (
+      'A' => 2.0,
+      'B' => 'Phần Labs trong môn học Tin học cơ sở thì chiếm bao nhiêu % trong cấu trúc đánh giá điểm của môn học',
+      'C' => 'A',
+      'D' => '0.12',
+      'E' => '',
+      'F' => '0',
+    ),
+    5 =>
+    array (
+      'A' => NULL,
+      'B' => NULL,
+      'C' => 'B',
+      'D' => '0.28',
+      'E' => '',
+      'F' => '',
+    ),
+    6 =>
+    array (
+      'A' => NULL,
+      'B' => NULL,
+      'C' => 'C',
+      'D' => '0.2',
+      'E' => '',
+      'F' => '',
+    ),
+    7 =>
+    array (
+      'A' => NULL,
+      'B' => NULL,
+      'C' => 'D',
+      'D' => '0.4',
+      'E' => 'B',
+      'F' => '',
+    ),

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Users PUBLIC "-//ILIAS//DTD UserImport//EN" "http://localhost/ILIAS/xml/ilias_user_5_1.dtd">
+<!--User of ilias system-->
+<Users>
+    <UDFDefinitions></UDFDefinitions>
+    <User Id="il_0_usr_326" Language="vi" Action="Update">
+        <Login>demo</Login>
+        <Role Id="il_0_role_5" Type="Global">Guest</Role>
+        <Firstname>ok</Firstname>
+        <Lastname>ok</Lastname>
+        <Gender>f</Gender>
+        <Email>sd@fpt.edu.vn</Email>
+        <Active>true</Active>
+        <TimeLimitOwner>7</TimeLimitOwner>
+        <TimeLimitUnlimited>1</TimeLimitUnlimited>
+        <TimeLimitFrom>1656047133</TimeLimitFrom>
+        <TimeLimitUntil>1656047133</TimeLimitUntil>
+        <TimeLimitMessage>0</TimeLimitMessage>
+        <ApproveDate>2022-06-24 05:06:21</ApproveDate>
+        <AuthMode type="default"/>
+        <LastUpdate>2022-06-24 05:06:21</LastUpdate>
+        <LastLogin>2022-06-24 12:11:38</LastLogin>
+    </User>
+    <User Id="il_0_usr_331" Language="vi" Action="Update">
+        <Login>student</Login>
+        <Role Id="il_0_role_5" Type="Global">Guest</Role>
+        <Firstname>mr</Firstname>
+        <Lastname>student</Lastname>
+        <Gender>m</Gender>
+        <Email>student@fpt.edu.vn</Email>
+        <Active>true</Active>
+        <TimeLimitOwner>7</TimeLimitOwner>
+        <TimeLimitUnlimited>1</TimeLimitUnlimited>
+        <TimeLimitMessage>0</TimeLimitMessage>
+        <ApproveDate>2022-06-24 08:18:18</ApproveDate>
+        <AuthMode type="default"/>
+        <LastUpdate>2022-06-27 03:27:03</LastUpdate>
+        <LastLogin>2022-07-16 18:55:38</LastLogin>
+    </User>
+    <User Id="il_0_usr_332" Language="vi" Action="Update">
+        <Login>teacher</Login>
+        <Role Id="il_0_role_4" Type="Global">User</Role>
+        <Role Id="il_0_role_339" Type="Local">il_crs_admin_89</Role>
+        <Firstname>mr</Firstname>
+        <Lastname>teacher</Lastname>
+        <Gender>f</Gender>
+        <Email>teacher@fpt.edu.vn</Email>
+        <Active>true</Active>
+        <TimeLimitOwner>7</TimeLimitOwner>
+        <TimeLimitUnlimited>1</TimeLimitUnlimited>
+        <TimeLimitMessage>0</TimeLimitMessage>
+        <ApproveDate>2022-06-24 08:18:18</ApproveDate>
+        <AuthMode type="default"/>
+        <LastUpdate>2022-06-24 09:49:09</LastUpdate>
+        <LastLogin>2022-07-15 13:12:34</LastLogin>
+    </User>
+</Users>

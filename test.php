@@ -257,6 +257,7 @@ function generateXML($data)
             }
         }
 
+        // this is check answers true!!!
         foreach ($true_answers as $val_true_answers) {
             if (!empty($val_true_answers)) {
                 $check_true_answer = str_split($val_true_answers);

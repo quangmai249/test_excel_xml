@@ -151,6 +151,9 @@ function generateXML($data)
         $true_answers = array_slice($val, 4, 1);
         $type_answers = array_slice($val, 5, 1);
 
+        echo "<pre>";
+        print_r($val);
+
         foreach ($title as $key_title => $val_title) {
             foreach ($type_answers as $val_type_answers) {
                 if (!empty($val_title)) {
@@ -176,8 +179,8 @@ function generateXML($data)
                                 }
                             }
                         }
-
                     }
+
                     if ($val_type_answers == 1) {
                         foreach ($arrayDefault['qtimetadatafield_multichoice'] as $val_qtimetadatafield) {
                             if (!empty($qtimetadatafield)) {
@@ -201,11 +204,10 @@ function generateXML($data)
 
                     if ($val_type_answers == 0) {
                         $response_lid->setAttribute("rcardinality", 'Single');
-
                     }
+
                     if ($val_type_answers == 1) {
                         $response_lid->setAttribute("rcardinality", 'Multiple');
-
                     }
 
                     $render_choice = $response_lid->appendChild($xmlDoc->createElement("render_choice"));
@@ -255,21 +257,40 @@ function generateXML($data)
             if ($number_of_answers > 3) {
                 $number_of_answers = 0;
             }
+
+        }
+
+        foreach ($true_answers as $val_true_answers) {
+            $check_true_answer = str_split($val_true_answers);
+        }
+
+        foreach ($answers as $val_answers) {
+
+        }
+        foreach ($check_true_answer as $val_check_true_answer) {
+
+        }
+
+        echo "<pre>";
+        var_dump($val_answers);
+
+        echo "<pre>";
+        var_dump($val_check_true_answer);
+
+        if ($val_check_true_answer == $val_answers) {
+            $setvar = $respcondition->appendChild($xmlDoc->createElement("setvar", 1));
+            $setvar->setAttribute("action", 'Add');
+
+            echo "---here---";
         }
 
         // this is check answers true!!!
-        foreach ($true_answers as $val_true_answers) {
-            if (!empty($val_true_answers)) {
-                $check_true_answer = str_split($val_true_answers);
 
-                $setvar = $respcondition->appendChild($xmlDoc->createElement("setvar", 0));
-                $setvar->setAttribute("action", 'Add');
-
-            } else {
-                $setvar = $respcondition->appendChild($xmlDoc->createElement("setvar", 0));
-                $setvar->setAttribute("action", 'Add');
-            }
+        else {
+            $setvar = $respcondition->appendChild($xmlDoc->createElement("setvar", 0));
+            $setvar->setAttribute("action", 'Add');
         }
+
     }
 
     header("Content-Type: text/html; charset=UTF-8");

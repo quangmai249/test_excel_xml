@@ -151,9 +151,6 @@ function generateXML($data)
         $true_answers = array_slice($val, 4, 1);
         $type_answers = array_slice($val, 5, 1);
 
-        echo "<pre>";
-        print_r($val);
-
         foreach ($title as $key_title => $val_title) {
             foreach ($type_answers as $val_type_answers) {
                 if (!empty($val_title)) {
@@ -271,17 +268,12 @@ function generateXML($data)
 
         }
 
-        echo "<pre>";
-        var_dump($val_answers);
-
-        echo "<pre>";
-        var_dump($val_check_true_answer);
-
         if ($val_check_true_answer == $val_answers) {
             $setvar = $respcondition->appendChild($xmlDoc->createElement("setvar", 1));
             $setvar->setAttribute("action", 'Add');
 
-            echo "---here---";
+            echo "<pre>";
+            print_r($val_answers);
         }
 
         // this is check answers true!!!

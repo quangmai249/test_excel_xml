@@ -257,32 +257,20 @@ function generateXML($data)
 
         }
 
-        foreach ($true_answers as $val_true_answers) {
-            $check_true_answer = str_split($val_true_answers);
-        }
-
-        foreach ($answers as $val_answers) {
-
-        }
-        foreach ($check_true_answer as $val_check_true_answer) {
-
-        }
-
-        if ($val_check_true_answer == $val_answers) {
-            $setvar = $respcondition->appendChild($xmlDoc->createElement("setvar", 1));
-            $setvar->setAttribute("action", 'Add');
-
-            echo "<pre>";
-            print_r($val_answers);
-        }
-
         // this is check answers true!!!
-
-        else {
-            $setvar = $respcondition->appendChild($xmlDoc->createElement("setvar", 0));
-            $setvar->setAttribute("action", 'Add');
+        foreach ($true_answers as $val_true_answers) {
+            foreach ($answers as $val_answers) {
+                echo "<pre>";
+                print_r($val_answers);
+                if ($val_answers == $val_true_answers) {
+                    $setvar = $respcondition->appendChild($xmlDoc->createElement("setvar", 1));
+                    $setvar->setAttribute("action", 'Add');
+                } else {
+                    $setvar = $respcondition->appendChild($xmlDoc->createElement("setvar", 0));
+                    $setvar->setAttribute("action", 'Add');
+                }
+            }
         }
-
     }
 
     header("Content-Type: text/html; charset=UTF-8");

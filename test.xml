@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <questestinterop>
-  <item ident="7072419110" title="Th&#x1EF1;c t&#x1EA1;i &#x1EA3;o, h&#x1EC7; chuy&#xEA;n gia, robot l&#xE0; c&#xE1;c &#x1EE9;ng d&#x1EE5;ng thu&#x1ED9;c ph&#x1EA7;n m&#x1EC1;m n&#xE0;o?" maxattempts="0">
+  <item ident="2680617443" title="Ph&#x1EA7;n m&#x1EC1;m &#x1EE9;ng d&#x1EE5;ng bao g&#x1ED3;m ph&#x1EA7;n m&#x1EC1;m c&#x1A1; b&#x1EA3;n v&#xE0; ph&#x1EA7;n m&#x1EC1;m chuy&#xEA;n d&#x1EE5;ng &#x111;&#xFA;ng hay sai?" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -48,7 +48,7 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="Th&#x1EF1;c t&#x1EA1;i &#x1EA3;o, h&#x1EC7; chuy&#xEA;n gia, robot l&#xE0; c&#xE1;c &#x1EE9;ng d&#x1EE5;ng thu&#x1ED9;c ph&#x1EA7;n m&#x1EC1;m n&#xE0;o?">
+    <presentation label="Ph&#x1EA7;n m&#x1EC1;m &#x1EE9;ng d&#x1EE5;ng bao g&#x1ED3;m ph&#x1EA7;n m&#x1EC1;m c&#x1A1; b&#x1EA3;n v&#xE0; ph&#x1EA7;n m&#x1EC1;m chuy&#xEA;n d&#x1EE5;ng &#x111;&#xFA;ng hay sai?">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
@@ -57,22 +57,12 @@
           <render_choice shuffle="Yes">
             <response_label ident="0">
               <material>
-                <mattext texttype="text/plain">Ph&#x1EA7;n m&#x1EC1;m x&#x1EED; l&#xFD; &#x111;&#x1ED3; h&#x1ECD;a</mattext>
+                <mattext texttype="text/plain">&#x110;&#xFA;ng</mattext>
               </material>
             </response_label>
             <response_label ident="1">
               <material>
-                <mattext texttype="text/plain">Ph&#x1EA7;n m&#x1EC1;m x&#x1EED; l&#xFD; &#xE2;m thanh</mattext>
-              </material>
-            </response_label>
-            <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">Ph&#x1EA7;n m&#x1EC1;m thi&#x1EBF;t k&#x1EBF; Web</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">Ph&#x1EA7;n m&#x1EC1;m tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o</mattext>
+                <mattext texttype="text/plain">Sai</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -88,168 +78,13 @@
           <varequal respident="MCSR">0</varequal>
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">0</setvar>
+        <setvar action="Add">1</setvar>
       </respcondition>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">1</varequal>
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">3</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-    </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-  </item>
-  <item ident="4437055643" title="Nh&#x1EEF;ng ng&#x1B0;&#x1EDD;i n&#xE0;y c&#xF3; tr&#xE1;ch nhi&#x1EC7;m ph&#xE1;t tri&#x1EC3;n, ki&#x1EC3;m tra v&#xE0; x&#x1EED; l&#xFD; s&#x1EF1; c&#x1ED1; ch&#x1B0;&#x1A1;ng tr&#xEC;nh m&#xE1;y t&#xED;nh" maxattempts="0">
-    <qticomment/>
-    <duration>P0Y0M0DT0H1M0S</duration>
-    <itemmetadata>
-      <qtimetadata>
-        <qtimetadatafield/>
-        <qtimetadatafield>
-          <fieldlabel>ILIAS_VERSION</fieldlabel>
-          <fieldentry>7.10 2022-04-28</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>QUESTIONTYPE</fieldlabel>
-          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>AUTHOR</fieldlabel>
-          <fieldentry>root user</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>additional_cont_edit_mode</fieldlabel>
-          <fieldentry>default</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>externalId</fieldlabel>
-          <fieldentry>62b96929141b43.43514600</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>ilias_lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>thumb_size</fieldlabel>
-          <fieldentry/>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>feedback_setting</fieldlabel>
-          <fieldentry>2</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>singleline</fieldlabel>
-          <fieldentry>1</fieldentry>
-        </qtimetadatafield>
-      </qtimetadata>
-    </itemmetadata>
-    <presentation label="Nh&#x1EEF;ng ng&#x1B0;&#x1EDD;i n&#xE0;y c&#xF3; tr&#xE1;ch nhi&#x1EC7;m ph&#xE1;t tri&#x1EC3;n, ki&#x1EC3;m tra v&#xE0; x&#x1EED; l&#xFD; s&#x1EF1; c&#x1ED1; ch&#x1B0;&#x1A1;ng tr&#xEC;nh m&#xE1;y t&#xED;nh">
-      <flow>
-        <material>
-          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
-        </material>
-        <response_lid ident="MCSR" rcardinality="Single">
-          <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">Qu&#x1EA3;n tr&#x1ECB; c&#x1A1; s&#x1EDF; d&#x1EEF; li&#x1EC7;u</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">nh&#xE0; qu&#x1EA3;n l&#xFD; m&#x1EA1;ng</mattext>
-              </material>
-            </response_label>
-            <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">l&#x1EAD;p tr&#xEC;nh vi&#xEA;n</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">chuy&#xEA;n gia ph&#xE2;n t&#xED;ch h&#x1EC7; th&#x1ED1;ng</mattext>
-              </material>
-            </response_label>
-          </render_choice>
-        </response_lid>
-      </flow>
-    </presentation>
-    <resprocessing>
-      <outcomes>
-        <decvar/>
-      </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">1</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">3</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
         <setvar action="Add">0</setvar>
       </respcondition>
     </resprocessing>
@@ -267,22 +102,8 @@
         </material>
       </flow_mat>
     </itemfeedback>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
   </item>
-  <item ident="1073032706" title="Tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o &#x111;&#x1B0;&#x1EE3;c xem nh&#x1B0; m&#x1ED9;t m&#xF4;n h&#x1ECD;c v&#xE0;o n&#x103;m n&#xE0;o?" maxattempts="0">
+  <item ident="7426032647" title="Ch&#x1B0;&#x1A1;ng tr&#xEC;nh n&#xE0;o d&#xF9;ng &#x111;&#x1EC3; &#x111;i&#x1EC1;u khi&#x1EC3;n thi&#x1EBF;t b&#x1ECB; ph&#x1EA7;n c&#x1EE9;ng?" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -330,31 +151,31 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="Tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o &#x111;&#x1B0;&#x1EE3;c xem nh&#x1B0; m&#x1ED9;t m&#xF4;n h&#x1ECD;c v&#xE0;o n&#x103;m n&#xE0;o?">
+    <presentation label="Ch&#x1B0;&#x1A1;ng tr&#xEC;nh n&#xE0;o d&#xF9;ng &#x111;&#x1EC3; &#x111;i&#x1EC1;u khi&#x1EC3;n thi&#x1EBF;t b&#x1ECB; ph&#x1EA7;n c&#x1EE9;ng?">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
         </material>
         <response_lid ident="MCSR" rcardinality="Single">
           <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">1969</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">1975</mattext>
-              </material>
-            </response_label>
             <response_label ident="2">
               <material>
-                <mattext texttype="text/plain">1956</mattext>
+                <mattext texttype="text/plain">&#x1EE8;ng d&#x1EE5;ng</mattext>
               </material>
             </response_label>
             <response_label ident="3">
               <material>
-                <mattext texttype="text/plain">1974</mattext>
+                <mattext texttype="text/plain">Driver</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">H&#x1EC7; &#x111;i&#x1EC1;u h&#xE0;nh</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">Website</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -365,6 +186,20 @@
       <outcomes>
         <decvar/>
       </outcomes>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">2</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">3</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">0</varequal>
@@ -379,35 +214,7 @@
         <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
         <setvar action="Add">0</setvar>
       </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">3</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
     </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
     <itemfeedback ident="response_2" view="All">
       <flow_mat>
         <material>
@@ -422,8 +229,22 @@
         </material>
       </flow_mat>
     </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
   </item>
-  <item ident="4769487245" title="Ai l&#xE0; ng&#x1B0;&#x1EDD;i &#x111;&#x1EA7;u ti&#xEA;n &#x111;&#x1B0;a ra kh&#xE1;i ni&#x1EC7;m Tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o?" maxattempts="0">
+  <item ident="1652715074" title="M&#x1ED9;t b&#xE0;i tr&#xEC;nh chi&#x1EBF;u th&#x1B0;&#x1EDD;ng l&#xE0; m&#x1ED9;t t&#x1EAD;p h&#x1EE3;p c&#x1EE7;a c&#xE1;c th&#xE0;nh ph&#x1EA7;n n&#xE0;o sau &#x111;&#xE2;y?" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -471,31 +292,26 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="Ai l&#xE0; ng&#x1B0;&#x1EDD;i &#x111;&#x1EA7;u ti&#xEA;n &#x111;&#x1B0;a ra kh&#xE1;i ni&#x1EC7;m Tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o?">
+    <presentation label="M&#x1ED9;t b&#xE0;i tr&#xEC;nh chi&#x1EBF;u th&#x1B0;&#x1EDD;ng l&#xE0; m&#x1ED9;t t&#x1EAD;p h&#x1EE3;p c&#x1EE7;a c&#xE1;c th&#xE0;nh ph&#x1EA7;n n&#xE0;o sau &#x111;&#xE2;y?">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
         </material>
         <response_lid ident="MCSR" rcardinality="Single">
           <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">Steve Jobs</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">John McCarthy</mattext>
-              </material>
-            </response_label>
             <response_label ident="2">
               <material>
-                <mattext texttype="text/plain">Alan Turing</mattext>
+                <mattext texttype="text/plain">B&#x1EA3;ng t&#xED;nh</mattext>
               </material>
             </response_label>
             <response_label ident="3">
               <material>
-                <mattext texttype="text/plain">Leavitt v&#xE0; Whisler</mattext>
+                <mattext texttype="text/plain">Slide</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">Bi&#x1EC3;u t&#x1B0;&#x1EE3;ng</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -508,20 +324,6 @@
       </outcomes>
       <respcondition continue="Yes">
         <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">1</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
           <varequal respident="MCSR">2</varequal>
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
@@ -532,23 +334,16 @@
           <varequal respident="MCSR">3</varequal>
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
         <setvar action="Add">0</setvar>
       </respcondition>
     </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
     <itemfeedback ident="response_2" view="All">
       <flow_mat>
         <material>
@@ -563,8 +358,15 @@
         </material>
       </flow_mat>
     </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
   </item>
-  <item ident="5474094727" title="AI l&#xE0; g&#xEC;?" maxattempts="0">
+  <item ident="4172398249" title="Ph&#x1EA7;n m&#x1EC1;m n&#xE0;o c&#xF3; th&#x1EC3; so&#x1EA1;n th&#x1EA3;o v&#x103;n b&#x1EA3;n v&#x1EDB;i n&#x1ED9;i dung v&#xE0; &#x111;&#x1ECB;nh d&#x1EA1;ng nh&#x1B0; sau:&#10;&#x201D; C&#xF4;ng cha nh&#x1B0; n&#xFA;i Th&#xE1;i S&#x1A1;n&#10;Ngh&#x129;a m&#x1EB9; nh&#x1B0; n&#x1B0;&#x1EDB;c trong ngu&#x1ED3;n ch&#x1EA3;y ra.&#10;M&#x1ED9;t l&#xF2;ng th&#x1EDD; m&#x1EB9; k&#xED;nh cha,&#10;Cho tr&#xF2;n ch&#x1EEF; hi&#x1EBF;u m&#x1EDB;i l&#xE0; &#x111;&#x1EA1;o con.&#x201D;" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -612,31 +414,31 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="AI l&#xE0; g&#xEC;?">
+    <presentation label="Ph&#x1EA7;n m&#x1EC1;m n&#xE0;o c&#xF3; th&#x1EC3; so&#x1EA1;n th&#x1EA3;o v&#x103;n b&#x1EA3;n v&#x1EDB;i n&#x1ED9;i dung v&#xE0; &#x111;&#x1ECB;nh d&#x1EA1;ng nh&#x1B0; sau:&#10;&#x201D; C&#xF4;ng cha nh&#x1B0; n&#xFA;i Th&#xE1;i S&#x1A1;n&#10;Ngh&#x129;a m&#x1EB9; nh&#x1B0; n&#x1B0;&#x1EDB;c trong ngu&#x1ED3;n ch&#x1EA3;y ra.&#10;M&#x1ED9;t l&#xF2;ng th&#x1EDD; m&#x1EB9; k&#xED;nh cha,&#10;Cho tr&#xF2;n ch&#x1EEF; hi&#x1EBF;u m&#x1EDB;i l&#xE0; &#x111;&#x1EA1;o con.&#x201D;">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
         </material>
         <response_lid ident="MCSR" rcardinality="Single">
           <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">Tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o</mattext>
-              </material>
-            </response_label>
             <response_label ident="1">
               <material>
-                <mattext texttype="text/plain">Kho d&#x1EEF; li&#x1EC7;u kh&#x1ED5;ng l&#x1ED3;</mattext>
+                <mattext texttype="text/plain">Notepad</mattext>
               </material>
             </response_label>
             <response_label ident="2">
               <material>
-                <mattext texttype="text/plain">Th&#x1EBF; gi&#x1EDB;i v&#x1EA1;n v&#x1EAD;t</mattext>
+                <mattext texttype="text/plain">Microsoft Word</mattext>
               </material>
             </response_label>
             <response_label ident="3">
               <material>
-                <mattext texttype="text/plain">Chu&#x1ED7;i m&#xE3; h&#xF3;a kh&#x1ED1;i</mattext>
+                <mattext texttype="text/plain">WordPad</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">T&#x1EA5;t c&#x1EA3; &#x111;&#x1EC1;u &#x111;&#xFA;ng</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -647,13 +449,6 @@
       <outcomes>
         <decvar/>
       </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">1</varequal>
@@ -675,14 +470,14 @@
         <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
         <setvar action="Add">0</setvar>
       </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
     </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
     <itemfeedback ident="response_1" view="All">
       <flow_mat>
         <material>
@@ -704,8 +499,15 @@
         </material>
       </flow_mat>
     </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
   </item>
-  <item ident="6301876849" title="C&#xF4;ng ngh&#x1EC7; AI &#x111;&#x1B0;&#x1EE3;c chia l&#xE0;m 4 lo&#x1EA1;i ch&#xED;nh g&#x1ED3;m:" maxattempts="0">
+  <item ident="1972987888" title="Microsoft Word cho ph&#xE9;p l&#x1B0;u file d&#x1EA1;ng g&#xEC;?" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -753,31 +555,31 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="C&#xF4;ng ngh&#x1EC7; AI &#x111;&#x1B0;&#x1EE3;c chia l&#xE0;m 4 lo&#x1EA1;i ch&#xED;nh g&#x1ED3;m:">
+    <presentation label="Microsoft Word cho ph&#xE9;p l&#x1B0;u file d&#x1EA1;ng g&#xEC;?">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
         </material>
         <response_lid ident="MCSR" rcardinality="Single">
           <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">C&#xF4;ng ngh&#x1EC7; AI ph&#x1EA3;n &#x1EE9;ng, C&#xF4;ng ngh&#x1EC7; AI v&#x1EDB;i b&#x1ED9; nh&#x1EDB; h&#x1EA1;n ch&#x1EBF;, L&#xFD; thuy&#x1EBF;t tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o, T&#x1EF1; nh&#x1EAD;n th&#x1EE9;c</mattext>
-              </material>
-            </response_label>
             <response_label ident="1">
               <material>
-                <mattext texttype="text/plain">C&#xF4;ng ngh&#x1EC7; AI ph&#x1EA3;n &#x1EE9;ng, C&#xF4;ng ngh&#x1EC7; AI v&#x1EDB;i b&#x1ED9; nh&#x1EDB; kh&#xF4;ng gi&#x1EDB;i h&#x1EA1;n, L&#xFD; thuy&#x1EBF;t tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o, T&#x1EF1; nh&#x1EAD;n th&#x1EE9;c</mattext>
+                <mattext texttype="text/plain">.DOC</mattext>
               </material>
             </response_label>
             <response_label ident="2">
               <material>
-                <mattext texttype="text/plain">C&#xF4;ng ngh&#x1EC7; AI ph&#x1EA3;n &#x1EE9;ng, C&#xF4;ng ngh&#x1EC7; AI v&#x1EDB;i b&#x1ED9; nh&#x1EDB; h&#x1EA1;n ch&#x1EBF;, L&#xFD; thuy&#x1EBF;t tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o, T&#x1EF1; x&#x1EED; l&#xFD;</mattext>
+                <mattext texttype="text/plain">.DOCX</mattext>
               </material>
             </response_label>
             <response_label ident="3">
               <material>
-                <mattext texttype="text/plain">C&#xF4;ng ngh&#x1EC7; AI ph&#x1EA3;n &#x1EE9;ng, C&#xF4;ng ngh&#x1EC7; AI v&#x1EDB;i b&#x1ED9; nh&#x1EDB; h&#x1EA1;n ch&#x1EBF;, L&#xFD; thuy&#x1EBF;t tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o, T&#x1EF1; th&#x1EF1;c h&#xE0;nh</mattext>
+                <mattext texttype="text/plain">.PDF</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">T&#x1EA5;t c&#x1EA3; &#x111;&#x1EC1;u &#x111;&#xFA;ng</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -788,13 +590,6 @@
       <outcomes>
         <decvar/>
       </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">1</varequal>
@@ -816,119 +611,6 @@
         <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
         <setvar action="Add">0</setvar>
       </respcondition>
-    </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-  </item>
-  <item ident="3407769852" title="C&#xF4;ng ngh&#x1EC7; AI ph&#x1EA3;n &#x1EE9;ng l&#xE0; g&#xEC;?" maxattempts="0">
-    <qticomment/>
-    <duration>P0Y0M0DT0H1M0S</duration>
-    <itemmetadata>
-      <qtimetadata>
-        <qtimetadatafield/>
-        <qtimetadatafield>
-          <fieldlabel>ILIAS_VERSION</fieldlabel>
-          <fieldentry>7.10 2022-04-28</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>QUESTIONTYPE</fieldlabel>
-          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>AUTHOR</fieldlabel>
-          <fieldentry>root user</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>additional_cont_edit_mode</fieldlabel>
-          <fieldentry>default</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>externalId</fieldlabel>
-          <fieldentry>62b96929141b43.43514600</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>ilias_lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>thumb_size</fieldlabel>
-          <fieldentry/>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>feedback_setting</fieldlabel>
-          <fieldentry>2</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>singleline</fieldlabel>
-          <fieldentry>1</fieldentry>
-        </qtimetadatafield>
-      </qtimetadata>
-    </itemmetadata>
-    <presentation label="C&#xF4;ng ngh&#x1EC7; AI ph&#x1EA3;n &#x1EE9;ng l&#xE0; g&#xEC;?">
-      <flow>
-        <material>
-          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
-        </material>
-        <response_lid ident="MCSR" rcardinality="Single">
-          <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">&#x110;&#xE2;y l&#xE0; lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; nh&#xE2;n t&#x1EA1;o c&#xF3; kh&#x1EA3; n&#x103;ng ph&#xE2;n t&#xED;ch nh&#x1EEF;ng &#x111;&#x1ED9;ng th&#xE1;i kh&#x1EA3; thi nh&#x1EA5;t c&#x1EE7;a ch&#xED;nh n&#xF3; v&#xE0; &#x111;&#x1ED1;i th&#x1EE7;. T&#x1EEB; vi&#x1EC7;c ph&#xE2;n t&#xED;ch &#x111;&#xF3;, n&#xF3; s&#x1EBD; ch&#x1ECD;n ra &#x111;&#x1B0;&#x1EE3;c nh&#x1EEF;ng h&#xE0;nh &#x111;&#x1ED9;ng, gi&#x1EA3;i ph&#xE1;p chi&#x1EBF;n l&#x1B0;&#x1EE3;c ho&#xE0;n h&#x1EA3;o v&#xE0; t&#x1ED1;i &#x1B0;u nh&#x1EA5;t.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">Lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; AI n&#xE0;y &#x111;&#x1B0;&#x1EE3;c k&#x1EBF;t h&#x1EE3;p ch&#x1EE7; y&#x1EBF;u v&#x1EDB;i c&#xE1;c c&#x1EA3;m bi&#x1EBF;n m&#xF4;i tr&#x1B0;&#x1EDD;ng xung quanh. T&#x1EEB; &#x111;&#xF3; d&#x1EF1; &#x111;o&#xE1;n nh&#x1EEF;ng t&#xEC;nh hu&#x1ED1;ng c&#xF3; th&#x1EC3; x&#x1EA3;y ra. Ph&#xE2;n t&#xED;ch v&#xE0; &#x111;i&#x1EC1;u h&#x1B0;&#x1EDB;ng t&#x1ED1;t nh&#x1EA5;t nh&#x1EEF;ng h&#xE0;nh &#x111;&#x1ED9;ng k&#x1EBF; ti&#x1EBF;p c&#x1EE7;a thi&#x1EBF;t b&#x1ECB;.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">Lo&#x1EA1;i AI n&#xE0;y c&#xF3; th&#x1EC3; h&#x1ECD;c h&#x1ECF;i xung quanh, &#x111;i&#x1EC1;u ch&#x1EC9;nh v&#xE0; t&#x1EF1; suy ngh&#x129;, t&#x1B0; duy. T&#x1EEB; &#x111;&#xF3; &#x111;&#x1B0;a ra h&#xE0;nh &#x111;&#x1ED9;ng &#xE1;p d&#x1EE5;ng c&#x1EE5; th&#x1EC3; cho b&#x1EA3;n th&#xE2;n.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">&#x110;&#xE2;y l&#xE0; m&#x1ED9;t c&#xF4;ng ngh&#x1EC7; tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o r&#x1EA5;t &#x111;&#x1EB7;c bi&#x1EC7;t, c&#xF3; kh&#x1EA3; n&#x103;ng t&#x1EF1; nh&#x1EAD;n th&#x1EE9;c r&#x1EA5;t l&#x1EDB;n v&#x1EC1; b&#x1EA3;n th&#xE2;n, c&#xF3; nh&#x1EEF;ng h&#xE0;nh vi v&#xE0; c&#xE1;ch c&#x1B0; x&#x1EED; r&#x1EA5;t gi&#x1ED1;ng con ng&#x1B0;&#x1EDD;i</mattext>
-              </material>
-            </response_label>
-          </render_choice>
-        </response_lid>
-      </flow>
-    </presentation>
-    <resprocessing>
-      <outcomes>
-        <decvar/>
-      </outcomes>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">0</varequal>
@@ -936,35 +618,7 @@
         <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
         <setvar action="Add">1</setvar>
       </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">1</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">3</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
     </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
     <itemfeedback ident="response_1" view="All">
       <flow_mat>
         <material>
@@ -986,8 +640,15 @@
         </material>
       </flow_mat>
     </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
   </item>
-  <item ident="3224298819" title="C&#xF4;ng ngh&#x1EC7; T&#x1EF1; nh&#x1EAD;n th&#x1EE9;c l&#xE0; g&#xEC;?" maxattempts="0">
+  <item ident="9666974598" title="Vi&#x1EC7;c t&#x103;ng kh&#x1EA3; n&#x103;ng l&#x1B0;u tr&#x1EEF; b&#x1EB1;ng c&#xE1;ch gi&#x1EA3;m kh&#xF4;ng  gian l&#x1B0;u tr&#x1EEF; c&#x1EA7;n thi&#x1EBF;t &#x111;&#x1ED1;i v&#x1EDB;i d&#x1EEF; li&#x1EC7;u ho&#x1EB7;c ch&#x1B0;&#x1A1;ng tr&#xEC;nh g&#x1ECD;i l&#xE0;?" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -1035,31 +696,31 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="C&#xF4;ng ngh&#x1EC7; T&#x1EF1; nh&#x1EAD;n th&#x1EE9;c l&#xE0; g&#xEC;?">
+    <presentation label="Vi&#x1EC7;c t&#x103;ng kh&#x1EA3; n&#x103;ng l&#x1B0;u tr&#x1EEF; b&#x1EB1;ng c&#xE1;ch gi&#x1EA3;m kh&#xF4;ng  gian l&#x1B0;u tr&#x1EEF; c&#x1EA7;n thi&#x1EBF;t &#x111;&#x1ED1;i v&#x1EDB;i d&#x1EEF; li&#x1EC7;u ho&#x1EB7;c ch&#x1B0;&#x1A1;ng tr&#xEC;nh g&#x1ECD;i l&#xE0;?">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
         </material>
         <response_lid ident="MCSR" rcardinality="Single">
           <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">&#x110;&#xE2;y l&#xE0; lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; nh&#xE2;n t&#x1EA1;o c&#xF3; kh&#x1EA3; n&#x103;ng ph&#xE2;n t&#xED;ch nh&#x1EEF;ng &#x111;&#x1ED9;ng th&#xE1;i kh&#x1EA3; thi nh&#x1EA5;t c&#x1EE7;a ch&#xED;nh n&#xF3; v&#xE0; &#x111;&#x1ED1;i th&#x1EE7;. T&#x1EEB; vi&#x1EC7;c ph&#xE2;n t&#xED;ch &#x111;&#xF3;, n&#xF3; s&#x1EBD; ch&#x1ECD;n ra &#x111;&#x1B0;&#x1EE3;c nh&#x1EEF;ng h&#xE0;nh &#x111;&#x1ED9;ng, gi&#x1EA3;i ph&#xE1;p chi&#x1EBF;n l&#x1B0;&#x1EE3;c ho&#xE0;n h&#x1EA3;o v&#xE0; t&#x1ED1;i &#x1B0;u nh&#x1EA5;t.</mattext>
-              </material>
-            </response_label>
             <response_label ident="1">
               <material>
-                <mattext texttype="text/plain">Lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; AI n&#xE0;y &#x111;&#x1B0;&#x1EE3;c k&#x1EBF;t h&#x1EE3;p ch&#x1EE7; y&#x1EBF;u v&#x1EDB;i c&#xE1;c c&#x1EA3;m bi&#x1EBF;n m&#xF4;i tr&#x1B0;&#x1EDD;ng xung quanh. T&#x1EEB; &#x111;&#xF3; d&#x1EF1; &#x111;o&#xE1;n nh&#x1EEF;ng t&#xEC;nh hu&#x1ED1;ng c&#xF3; th&#x1EC3; x&#x1EA3;y ra. Ph&#xE2;n t&#xED;ch v&#xE0; &#x111;i&#x1EC1;u h&#x1B0;&#x1EDB;ng t&#x1ED1;t nh&#x1EA5;t nh&#x1EEF;ng h&#xE0;nh &#x111;&#x1ED9;ng k&#x1EBF; ti&#x1EBF;p c&#x1EE7;a thi&#x1EBF;t b&#x1ECB;.</mattext>
+                <mattext texttype="text/plain">N&#xE9;n file</mattext>
               </material>
             </response_label>
             <response_label ident="2">
               <material>
-                <mattext texttype="text/plain">Lo&#x1EA1;i AI n&#xE0;y c&#xF3; th&#x1EC3; h&#x1ECD;c h&#x1ECF;i xung quanh, &#x111;i&#x1EC1;u ch&#x1EC9;nh v&#xE0; t&#x1EF1; suy ngh&#x129;, t&#x1B0; duy. T&#x1EEB; &#x111;&#xF3; &#x111;&#x1B0;a ra h&#xE0;nh &#x111;&#x1ED9;ng &#xE1;p d&#x1EE5;ng c&#x1EE5; th&#x1EC3; cho b&#x1EA3;n th&#xE2;n.</mattext>
+                <mattext texttype="text/plain">L&#x1B0;u tr&#x1EEF; b&#x1EC1;n</mattext>
               </material>
             </response_label>
             <response_label ident="3">
               <material>
-                <mattext texttype="text/plain">&#x110;&#xE2;y l&#xE0; m&#x1ED9;t c&#xF4;ng ngh&#x1EC7; tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o r&#x1EA5;t &#x111;&#x1EB7;c bi&#x1EC7;t, c&#xF3; kh&#x1EA3; n&#x103;ng t&#x1EF1; nh&#x1EAD;n th&#x1EE9;c r&#x1EA5;t l&#x1EDB;n v&#x1EC1; b&#x1EA3;n th&#xE2;n, c&#xF3; nh&#x1EEF;ng h&#xE0;nh vi v&#xE0; c&#xE1;ch c&#x1B0; x&#x1EED; r&#x1EA5;t gi&#x1ED1;ng con ng&#x1B0;&#x1EDD;i</mattext>
+                <mattext texttype="text/plain">D&#x1ECB;ch v&#x1EE5; l&#x1B0;u tr&#x1EEF; tr&#x1EF1;c tuy&#x1EBF;n</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">T&#x1EA5;t c&#x1EA3; &#x111;&#xE1;p &#xE1;n &#x111;&#x1EC1;u sai</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -1070,295 +731,6 @@
       <outcomes>
         <decvar/>
       </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">1</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">3</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-    </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-  </item>
-  <item ident="7792690079" title="L&#xFD; thuy&#x1EBF;t tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o l&#xE0; g&#xEC;?" maxattempts="0">
-    <qticomment/>
-    <duration>P0Y0M0DT0H1M0S</duration>
-    <itemmetadata>
-      <qtimetadata>
-        <qtimetadatafield/>
-        <qtimetadatafield>
-          <fieldlabel>ILIAS_VERSION</fieldlabel>
-          <fieldentry>7.10 2022-04-28</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>QUESTIONTYPE</fieldlabel>
-          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>AUTHOR</fieldlabel>
-          <fieldentry>root user</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>additional_cont_edit_mode</fieldlabel>
-          <fieldentry>default</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>externalId</fieldlabel>
-          <fieldentry>62b96929141b43.43514600</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>ilias_lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>thumb_size</fieldlabel>
-          <fieldentry/>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>feedback_setting</fieldlabel>
-          <fieldentry>2</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>singleline</fieldlabel>
-          <fieldentry>1</fieldentry>
-        </qtimetadatafield>
-      </qtimetadata>
-    </itemmetadata>
-    <presentation label="L&#xFD; thuy&#x1EBF;t tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o l&#xE0; g&#xEC;?">
-      <flow>
-        <material>
-          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
-        </material>
-        <response_lid ident="MCSR" rcardinality="Single">
-          <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">&#x110;&#xE2;y l&#xE0; lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; nh&#xE2;n t&#x1EA1;o c&#xF3; kh&#x1EA3; n&#x103;ng ph&#xE2;n t&#xED;ch nh&#x1EEF;ng &#x111;&#x1ED9;ng th&#xE1;i kh&#x1EA3; thi nh&#x1EA5;t c&#x1EE7;a ch&#xED;nh n&#xF3; v&#xE0; &#x111;&#x1ED1;i th&#x1EE7;. T&#x1EEB; vi&#x1EC7;c ph&#xE2;n t&#xED;ch &#x111;&#xF3;, n&#xF3; s&#x1EBD; ch&#x1ECD;n ra &#x111;&#x1B0;&#x1EE3;c nh&#x1EEF;ng h&#xE0;nh &#x111;&#x1ED9;ng, gi&#x1EA3;i ph&#xE1;p chi&#x1EBF;n l&#x1B0;&#x1EE3;c ho&#xE0;n h&#x1EA3;o v&#xE0; t&#x1ED1;i &#x1B0;u nh&#x1EA5;t.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">Lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; AI n&#xE0;y &#x111;&#x1B0;&#x1EE3;c k&#x1EBF;t h&#x1EE3;p ch&#x1EE7; y&#x1EBF;u v&#x1EDB;i c&#xE1;c c&#x1EA3;m bi&#x1EBF;n m&#xF4;i tr&#x1B0;&#x1EDD;ng xung quanh. T&#x1EEB; &#x111;&#xF3; d&#x1EF1; &#x111;o&#xE1;n nh&#x1EEF;ng t&#xEC;nh hu&#x1ED1;ng c&#xF3; th&#x1EC3; x&#x1EA3;y ra. Ph&#xE2;n t&#xED;ch v&#xE0; &#x111;i&#x1EC1;u h&#x1B0;&#x1EDB;ng t&#x1ED1;t nh&#x1EA5;t nh&#x1EEF;ng h&#xE0;nh &#x111;&#x1ED9;ng k&#x1EBF; ti&#x1EBF;p c&#x1EE7;a thi&#x1EBF;t b&#x1ECB;.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">Lo&#x1EA1;i AI n&#xE0;y c&#xF3; th&#x1EC3; h&#x1ECD;c h&#x1ECF;i xung quanh, &#x111;i&#x1EC1;u ch&#x1EC9;nh v&#xE0; t&#x1EF1; suy ngh&#x129;, t&#x1B0; duy. T&#x1EEB; &#x111;&#xF3; &#x111;&#x1B0;a ra h&#xE0;nh &#x111;&#x1ED9;ng &#xE1;p d&#x1EE5;ng c&#x1EE5; th&#x1EC3; cho b&#x1EA3;n th&#xE2;n.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">&#x110;&#xE2;y l&#xE0; m&#x1ED9;t c&#xF4;ng ngh&#x1EC7; tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o r&#x1EA5;t &#x111;&#x1EB7;c bi&#x1EC7;t, c&#xF3; kh&#x1EA3; n&#x103;ng t&#x1EF1; nh&#x1EAD;n th&#x1EE9;c r&#x1EA5;t l&#x1EDB;n v&#x1EC1; b&#x1EA3;n th&#xE2;n, c&#xF3; nh&#x1EEF;ng h&#xE0;nh vi v&#xE0; c&#xE1;ch c&#x1B0; x&#x1EED; r&#x1EA5;t gi&#x1ED1;ng con ng&#x1B0;&#x1EDD;i</mattext>
-              </material>
-            </response_label>
-          </render_choice>
-        </response_lid>
-      </flow>
-    </presentation>
-    <resprocessing>
-      <outcomes>
-        <decvar/>
-      </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">1</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">3</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-    </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-  </item>
-  <item ident="6979719176" title="C&#xF4;ng ngh&#x1EC7; AI v&#x1EDB;i b&#x1ED9; nh&#x1EDB; h&#x1EA1;n ch&#x1EBF; l&#xE0; g&#xEC;" maxattempts="0">
-    <qticomment/>
-    <duration>P0Y0M0DT0H1M0S</duration>
-    <itemmetadata>
-      <qtimetadata>
-        <qtimetadatafield/>
-        <qtimetadatafield>
-          <fieldlabel>ILIAS_VERSION</fieldlabel>
-          <fieldentry>7.10 2022-04-28</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>QUESTIONTYPE</fieldlabel>
-          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>AUTHOR</fieldlabel>
-          <fieldentry>root user</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>additional_cont_edit_mode</fieldlabel>
-          <fieldentry>default</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>externalId</fieldlabel>
-          <fieldentry>62b96929141b43.43514600</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>ilias_lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>thumb_size</fieldlabel>
-          <fieldentry/>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>feedback_setting</fieldlabel>
-          <fieldentry>2</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>singleline</fieldlabel>
-          <fieldentry>1</fieldentry>
-        </qtimetadatafield>
-      </qtimetadata>
-    </itemmetadata>
-    <presentation label="C&#xF4;ng ngh&#x1EC7; AI v&#x1EDB;i b&#x1ED9; nh&#x1EDB; h&#x1EA1;n ch&#x1EBF; l&#xE0; g&#xEC;">
-      <flow>
-        <material>
-          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
-        </material>
-        <response_lid ident="MCSR" rcardinality="Single">
-          <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">&#x110;&#xE2;y l&#xE0; lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; nh&#xE2;n t&#x1EA1;o c&#xF3; kh&#x1EA3; n&#x103;ng ph&#xE2;n t&#xED;ch nh&#x1EEF;ng &#x111;&#x1ED9;ng th&#xE1;i kh&#x1EA3; thi nh&#x1EA5;t c&#x1EE7;a ch&#xED;nh n&#xF3; v&#xE0; &#x111;&#x1ED1;i th&#x1EE7;. T&#x1EEB; vi&#x1EC7;c ph&#xE2;n t&#xED;ch &#x111;&#xF3;, n&#xF3; s&#x1EBD; ch&#x1ECD;n ra &#x111;&#x1B0;&#x1EE3;c nh&#x1EEF;ng h&#xE0;nh &#x111;&#x1ED9;ng, gi&#x1EA3;i ph&#xE1;p chi&#x1EBF;n l&#x1B0;&#x1EE3;c ho&#xE0;n h&#x1EA3;o v&#xE0; t&#x1ED1;i &#x1B0;u nh&#x1EA5;t.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">Lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; AI n&#xE0;y &#x111;&#x1B0;&#x1EE3;c k&#x1EBF;t h&#x1EE3;p ch&#x1EE7; y&#x1EBF;u v&#x1EDB;i c&#xE1;c c&#x1EA3;m bi&#x1EBF;n m&#xF4;i tr&#x1B0;&#x1EDD;ng xung quanh. T&#x1EEB; &#x111;&#xF3; d&#x1EF1; &#x111;o&#xE1;n nh&#x1EEF;ng t&#xEC;nh hu&#x1ED1;ng c&#xF3; th&#x1EC3; x&#x1EA3;y ra. Ph&#xE2;n t&#xED;ch v&#xE0; &#x111;i&#x1EC1;u h&#x1B0;&#x1EDB;ng t&#x1ED1;t nh&#x1EA5;t nh&#x1EEF;ng h&#xE0;nh &#x111;&#x1ED9;ng k&#x1EBF; ti&#x1EBF;p c&#x1EE7;a thi&#x1EBF;t b&#x1ECB;.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">Lo&#x1EA1;i AI n&#xE0;y c&#xF3; th&#x1EC3; h&#x1ECD;c h&#x1ECF;i xung quanh, &#x111;i&#x1EC1;u ch&#x1EC9;nh v&#xE0; t&#x1EF1; suy ngh&#x129;, t&#x1B0; duy. T&#x1EEB; &#x111;&#xF3; &#x111;&#x1B0;a ra h&#xE0;nh &#x111;&#x1ED9;ng &#xE1;p d&#x1EE5;ng c&#x1EE5; th&#x1EC3; cho b&#x1EA3;n th&#xE2;n.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">&#x110;&#xE2;y l&#xE0; m&#x1ED9;t c&#xF4;ng ngh&#x1EC7; tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o r&#x1EA5;t &#x111;&#x1EB7;c bi&#x1EC7;t, c&#xF3; kh&#x1EA3; n&#x103;ng t&#x1EF1; nh&#x1EAD;n th&#x1EE9;c r&#x1EA5;t l&#x1EDB;n v&#x1EC1; b&#x1EA3;n th&#xE2;n, c&#xF3; nh&#x1EEF;ng h&#xE0;nh vi v&#xE0; c&#xE1;ch c&#x1B0; x&#x1EED; r&#x1EA5;t gi&#x1ED1;ng con ng&#x1B0;&#x1EDD;i</mattext>
-              </material>
-            </response_label>
-          </render_choice>
-        </response_lid>
-      </flow>
-    </presentation>
-    <resprocessing>
-      <outcomes>
-        <decvar/>
-      </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">1</varequal>
@@ -1380,14 +752,14 @@
         <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
         <setvar action="Add">0</setvar>
       </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
     </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
     <itemfeedback ident="response_1" view="All">
       <flow_mat>
         <material>
@@ -1409,8 +781,15 @@
         </material>
       </flow_mat>
     </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
   </item>
-  <item ident="2787146491" title="Ph&#x1EA7;n m&#x1EC1;m t&#x1EF1; &#x111;&#xE1;nh c&#x1EDD; &#x111;&#x1B0;&#x1EE3;c &#xE1;p d&#x1EE5;ng c&#xF4;ng ngh&#x1EC7; AI g&#xEC;" maxattempts="0">
+  <item ident="1800928354" title="Ph&#x1EA7;n m&#x1EC1;m gi&#xE1;n &#x111;i&#x1EC7;p l&#xE0; m&#x1ED9;t lo&#x1EA1;i ph&#x1EA7;n m&#x1EC1;m di&#x1EC7;t virus" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -1458,31 +837,21 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="Ph&#x1EA7;n m&#x1EC1;m t&#x1EF1; &#x111;&#xE1;nh c&#x1EDD; &#x111;&#x1B0;&#x1EE3;c &#xE1;p d&#x1EE5;ng c&#xF4;ng ngh&#x1EC7; AI g&#xEC;">
+    <presentation label="Ph&#x1EA7;n m&#x1EC1;m gi&#xE1;n &#x111;i&#x1EC7;p l&#xE0; m&#x1ED9;t lo&#x1EA1;i ph&#x1EA7;n m&#x1EC1;m di&#x1EC7;t virus">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
         </material>
         <response_lid ident="MCSR" rcardinality="Single">
           <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">C&#xF4;ng ngh&#x1EC7; AI ph&#x1EA3;n &#x1EE9;ng</mattext>
-              </material>
-            </response_label>
             <response_label ident="1">
               <material>
-                <mattext texttype="text/plain">L&#xFD; thuy&#x1EBF;t tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o</mattext>
+                <mattext texttype="text/plain">&#x110;&#xFA;ng</mattext>
               </material>
             </response_label>
             <response_label ident="2">
               <material>
-                <mattext texttype="text/plain">T&#x1EF1; x&#x1EED; l&#xFD;</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">Kh&#xF4;ng &#xE1;p d&#x1EE5;ng c&#xE1;c c&#xF4;ng ngh&#x1EC7; k&#x1EC3; tr&#xEA;n</mattext>
+                <mattext texttype="text/plain">Sai</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -1495,13 +864,6 @@
       </outcomes>
       <respcondition continue="Yes">
         <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
           <varequal respident="MCSR">1</varequal>
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
@@ -1512,8 +874,107 @@
           <varequal respident="MCSR">2</varequal>
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">0</setvar>
+        <setvar action="Add">1</setvar>
       </respcondition>
+    </resprocessing>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+  <item ident="9312700259" title="&#x110;&#x1EC3; thi&#x1EBF;t k&#x1EBF; m&#x1ED9;t trang Web, b&#x1EA1;n ch&#x1ECD;n ph&#x1EA7;n m&#x1EC1;m n&#xE0;o?" maxattempts="0">
+    <qticomment/>
+    <duration>P0Y0M0DT0H1M0S</duration>
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield/>
+        <qtimetadatafield>
+          <fieldlabel>ILIAS_VERSION</fieldlabel>
+          <fieldentry>7.10 2022-04-28</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>QUESTIONTYPE</fieldlabel>
+          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>AUTHOR</fieldlabel>
+          <fieldentry>root user</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>additional_cont_edit_mode</fieldlabel>
+          <fieldentry>default</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>externalId</fieldlabel>
+          <fieldentry>62b96929141b43.43514600</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>ilias_lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>thumb_size</fieldlabel>
+          <fieldentry/>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>feedback_setting</fieldlabel>
+          <fieldentry>2</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>singleline</fieldlabel>
+          <fieldentry>1</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation label="&#x110;&#x1EC3; thi&#x1EBF;t k&#x1EBF; m&#x1ED9;t trang Web, b&#x1EA1;n ch&#x1ECD;n ph&#x1EA7;n m&#x1EC1;m n&#xE0;o?">
+      <flow>
+        <material>
+          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
+        </material>
+        <response_lid ident="MCSR" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">Photoshop</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">Camtasia</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">Visual Studio Code</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2">
+              <material>
+                <mattext texttype="text/plain">Ultra ISO</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar/>
+      </outcomes>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">3</varequal>
@@ -1521,119 +982,6 @@
         <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
         <setvar action="Add">0</setvar>
       </respcondition>
-    </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-  </item>
-  <item ident="7022151681" title="IoT l&#xE0; g&#xEC;?" maxattempts="0">
-    <qticomment/>
-    <duration>P0Y0M0DT0H1M0S</duration>
-    <itemmetadata>
-      <qtimetadata>
-        <qtimetadatafield/>
-        <qtimetadatafield>
-          <fieldlabel>ILIAS_VERSION</fieldlabel>
-          <fieldentry>7.10 2022-04-28</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>QUESTIONTYPE</fieldlabel>
-          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>AUTHOR</fieldlabel>
-          <fieldentry>root user</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>additional_cont_edit_mode</fieldlabel>
-          <fieldentry>default</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>externalId</fieldlabel>
-          <fieldentry>62b96929141b43.43514600</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>ilias_lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>thumb_size</fieldlabel>
-          <fieldentry/>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>feedback_setting</fieldlabel>
-          <fieldentry>2</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>singleline</fieldlabel>
-          <fieldentry>1</fieldentry>
-        </qtimetadatafield>
-      </qtimetadata>
-    </itemmetadata>
-    <presentation label="IoT l&#xE0; g&#xEC;?">
-      <flow>
-        <material>
-          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
-        </material>
-        <response_lid ident="MCSR" rcardinality="Single">
-          <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">Tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">Kho d&#x1EEF; li&#x1EC7;u kh&#x1ED5;ng l&#x1ED3;</mattext>
-              </material>
-            </response_label>
-            <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">L&#xE0; &#x111;&#x1EC1; c&#x1EAD;p &#x111;&#x1EBF;n h&#xE0;ng t&#x1EF7; thi&#x1EBF;t b&#x1ECB; v&#x1EAD;t l&#xFD; tr&#xEA;n kh&#x1EAF;p th&#x1EBF; gi&#x1EDB;i hi&#x1EC7;n &#x111;&#x1B0;&#x1EE3;c k&#x1EBF;t n&#x1ED1;i v&#x1EDB;i Internet</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">Chu&#x1ED7;i m&#xE3; h&#xF3;a kh&#x1ED1;i</mattext>
-              </material>
-            </response_label>
-          </render_choice>
-        </response_lid>
-      </flow>
-    </presentation>
-    <resprocessing>
-      <outcomes>
-        <decvar/>
-      </outcomes>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">0</varequal>
@@ -1646,23 +994,23 @@
           <varequal respident="MCSR">1</varequal>
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
         <setvar action="Add">1</setvar>
       </respcondition>
       <respcondition continue="Yes">
         <conditionvar>
-          <varequal respident="MCSR">3</varequal>
+          <varequal respident="MCSR">2</varequal>
         </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
         <setvar action="Add">0</setvar>
       </respcondition>
     </resprocessing>
+    <itemfeedback ident="response_3" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
     <itemfeedback ident="response_0" view="All">
       <flow_mat>
         <material>
@@ -1684,15 +1032,8 @@
         </material>
       </flow_mat>
     </itemfeedback>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
   </item>
-  <item ident="2654519731" title="Blockchain l&#xE0; g&#xEC;?" maxattempts="0">
+  <item ident="8720863039" title="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m &#x1EE9;ng d&#x1EE5;ng c&#x1A1; b&#x1EA3;n?" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -1740,31 +1081,31 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="Blockchain l&#xE0; g&#xEC;?">
+    <presentation label="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m &#x1EE9;ng d&#x1EE5;ng c&#x1A1; b&#x1EA3;n?">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
         </material>
         <response_lid ident="MCSR" rcardinality="Single">
           <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">Microsoft Word</mattext>
+              </material>
+            </response_label>
             <response_label ident="0">
               <material>
-                <mattext texttype="text/plain">Tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o</mattext>
+                <mattext texttype="text/plain">Photoshop</mattext>
               </material>
             </response_label>
             <response_label ident="1">
               <material>
-                <mattext texttype="text/plain">Kho d&#x1EEF; li&#x1EC7;u kh&#x1ED5;ng l&#x1ED3;</mattext>
+                <mattext texttype="text/plain">Netbean</mattext>
               </material>
             </response_label>
             <response_label ident="2">
               <material>
-                <mattext texttype="text/plain">L&#xE0; &#x111;&#x1EC1; c&#x1EAD;p &#x111;&#x1EBF;n h&#xE0;ng t&#x1EF7; thi&#x1EBF;t b&#x1ECB; v&#x1EAD;t l&#xFD; tr&#xEA;n kh&#x1EAF;p th&#x1EBF; gi&#x1EDB;i hi&#x1EC7;n &#x111;&#x1B0;&#x1EE3;c k&#x1EBF;t n&#x1ED1;i v&#x1EDB;i Internet</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">L&#xE0; c&#xF4;ng ngh&#x1EC7; chu&#x1ED7;i &#x2013; kh&#x1ED1;i, cho ph&#xE9;p&#xA0;truy&#x1EC1;n t&#x1EA3;i d&#x1EEF; li&#x1EC7;u&#xA0;m&#x1ED9;t c&#xE1;ch an to&#xE0;n d&#x1EF1;a tr&#xEA;n h&#x1EC7; th&#x1ED1;ng&#xA0;m&#xE3; h&#xF3;a&#xA0;v&#xF4; c&#xF9;ng ph&#x1EE9;c t&#x1EA1;p</mattext>
+                <mattext texttype="text/plain">Windows 7</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -1775,27 +1116,6 @@
       <outcomes>
         <decvar/>
       </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">1</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">3</varequal>
@@ -1803,119 +1123,6 @@
         <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
         <setvar action="Add">1</setvar>
       </respcondition>
-    </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-  </item>
-  <item ident="6357055323" title="C&#xF4;ng ngh&#x1EC7; Blockchain &#x2013; s&#x1EF1; k&#x1EBF;t h&#x1EE3;p gi&#x1EEF;a 3 lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; n&#xE0;o?" maxattempts="0">
-    <qticomment/>
-    <duration>P0Y0M0DT0H1M0S</duration>
-    <itemmetadata>
-      <qtimetadata>
-        <qtimetadatafield/>
-        <qtimetadatafield>
-          <fieldlabel>ILIAS_VERSION</fieldlabel>
-          <fieldentry>7.10 2022-04-28</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>QUESTIONTYPE</fieldlabel>
-          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>AUTHOR</fieldlabel>
-          <fieldentry>root user</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>additional_cont_edit_mode</fieldlabel>
-          <fieldentry>default</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>externalId</fieldlabel>
-          <fieldentry>62b96929141b43.43514600</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>ilias_lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>thumb_size</fieldlabel>
-          <fieldentry/>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>feedback_setting</fieldlabel>
-          <fieldentry>2</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>singleline</fieldlabel>
-          <fieldentry>1</fieldentry>
-        </qtimetadatafield>
-      </qtimetadata>
-    </itemmetadata>
-    <presentation label="C&#xF4;ng ngh&#x1EC7; Blockchain &#x2013; s&#x1EF1; k&#x1EBF;t h&#x1EE3;p gi&#x1EEF;a 3 lo&#x1EA1;i c&#xF4;ng ngh&#x1EC7; n&#xE0;o?">
-      <flow>
-        <material>
-          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
-        </material>
-        <response_lid ident="MCSR" rcardinality="Single">
-          <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">M&#x1EAD;t m&#xE3; h&#x1ECD;c, M&#x1EA1;ng ngang h&#xE0;ng, L&#xFD; thuy&#x1EBF;t tr&#xED; tu&#x1EC7; nh&#xE2;n t&#x1EA1;o</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">M&#x1EAD;t m&#xE3; h&#x1ECD;c, M&#x1EA1;ng client-server L&#xFD; thuy&#x1EBF;t tr&#xF2; ch&#x1A1;i</mattext>
-              </material>
-            </response_label>
-            <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">M&#x1EAD;t m&#xE3; h&#x1ECD;c, M&#x1EA1;ng ngang h&#xE0;ng, L&#xFD; thuy&#x1EBF;t tr&#xF2; ch&#x1A1;i</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">M&#x1EAD;t m&#xE3; h&#x1ECD;c, C&#xF4;ng ngh&#x1EC7; AI ph&#x1EA3;n &#x1EE9;ng, L&#xFD; thuy&#x1EBF;t tr&#xF2; ch&#x1A1;i</mattext>
-              </material>
-            </response_label>
-          </render_choice>
-        </response_lid>
-      </flow>
-    </presentation>
-    <resprocessing>
-      <outcomes>
-        <decvar/>
-      </outcomes>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">0</varequal>
@@ -1935,37 +1142,9 @@
           <varequal respident="MCSR">2</varequal>
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">3</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
         <setvar action="Add">0</setvar>
       </respcondition>
     </resprocessing>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
     <itemfeedback ident="response_3" view="All">
       <flow_mat>
         <material>
@@ -1973,107 +1152,6 @@
         </material>
       </flow_mat>
     </itemfeedback>
-  </item>
-  <item ident="5130147572" title="M&#x1EAD;t m&#xE3; h&#x1ECD;c trong c&#xF4;ng ngh&#x1EC7; Blockchain d&#xF9;ng &#x111;&#x1EC3; l&#xE0;m g&#xEC;?" maxattempts="0">
-    <qticomment/>
-    <duration>P0Y0M0DT0H1M0S</duration>
-    <itemmetadata>
-      <qtimetadata>
-        <qtimetadatafield/>
-        <qtimetadatafield>
-          <fieldlabel>ILIAS_VERSION</fieldlabel>
-          <fieldentry>7.10 2022-04-28</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>QUESTIONTYPE</fieldlabel>
-          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>AUTHOR</fieldlabel>
-          <fieldentry>root user</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>additional_cont_edit_mode</fieldlabel>
-          <fieldentry>default</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>externalId</fieldlabel>
-          <fieldentry>62b96929141b43.43514600</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>ilias_lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>thumb_size</fieldlabel>
-          <fieldentry/>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>feedback_setting</fieldlabel>
-          <fieldentry>2</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>singleline</fieldlabel>
-          <fieldentry>1</fieldentry>
-        </qtimetadatafield>
-      </qtimetadata>
-    </itemmetadata>
-    <presentation label="M&#x1EAD;t m&#xE3; h&#x1ECD;c trong c&#xF4;ng ngh&#x1EC7; Blockchain d&#xF9;ng &#x111;&#x1EC3; l&#xE0;m g&#xEC;?">
-      <flow>
-        <material>
-          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
-        </material>
-        <response_lid ident="MCSR" rcardinality="Single">
-          <render_choice shuffle="Yes">
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">M&#x1ED7;i m&#x1ED9;t n&#xFA;t trong m&#x1EA1;ng &#x111;&#x1B0;&#x1EE3;c xem nh&#x1B0; m&#x1ED9;t client v&#xE0; c&#x169;ng l&#xE0; server &#x111;&#x1EC3; l&#x1B0;u tr&#x1EEF; b&#x1EA3;n sao &#x1EE9;ng d&#x1EE5;ng.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">&#x110;&#x1EC3; &#x111;&#x1EA3;m b&#x1EA3;o t&#xED;nh minh b&#x1EA1;ch, to&#xE0;n v&#x1EB9;n v&#xE0; ri&#xEA;ng t&#x1B0; th&#xEC; c&#xF4;ng ngh&#x1EC7; Blockchain &#x111;&#xE3; s&#x1EED; d&#x1EE5;ng public key v&#xE0; h&#xE0;m hash function.</mattext>
-              </material>
-            </response_label>
-            <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">T&#x1EA5;t c&#x1EA3; c&#xE1;c n&#xFA;t tham gia v&#xE0;o h&#x1EC7; th&#x1ED1;ng &#x111;&#x1EC1;u ph&#x1EA3;i tu&#xE2;n th&#x1EE7; lu&#x1EAD;t ch&#x1A1;i &#x111;&#x1ED3;ng thu&#x1EAD;n (giao th&#x1EE9;c PoW, PoS,&#x2026;)</mattext>
-              </material>
-            </response_label>
-          </render_choice>
-        </response_lid>
-      </flow>
-    </presentation>
-    <resprocessing>
-      <outcomes>
-        <decvar/>
-      </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">1</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-    </resprocessing>
     <itemfeedback ident="response_0" view="All">
       <flow_mat>
         <material>
@@ -2096,7 +1174,7 @@
       </flow_mat>
     </itemfeedback>
   </item>
-  <item ident="3369781839" title="C&#xE1;c &#x111;&#x1EB7;c &#x111;i&#x1EC3;m n&#x1ED5;i b&#x1EAD;t c&#x1EE7;a Blockchain" maxattempts="0">
+  <item ident="8724567878" title="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m h&#x1ED7; tr&#x1EE3; g&#xF5; ti&#x1EBF;ng Vi&#x1EC7;t" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -2144,7 +1222,7 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="C&#xE1;c &#x111;&#x1EB7;c &#x111;i&#x1EC3;m n&#x1ED5;i b&#x1EAD;t c&#x1EE7;a Blockchain">
+    <presentation label="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m h&#x1ED7; tr&#x1EE3; g&#xF5; ti&#x1EBF;ng Vi&#x1EC7;t">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
@@ -2153,22 +1231,22 @@
           <render_choice shuffle="Yes">
             <response_label ident="3">
               <material>
-                <mattext texttype="text/plain">Kh&#xF4;ng th&#x1EC3; l&#xE0;m gi&#x1EA3;</mattext>
+                <mattext texttype="text/plain">Unikey</mattext>
               </material>
             </response_label>
             <response_label ident="0">
               <material>
-                <mattext texttype="text/plain">B&#x1EA5;t bi&#x1EBF;n</mattext>
+                <mattext texttype="text/plain">Vietkey</mattext>
               </material>
             </response_label>
             <response_label ident="1">
               <material>
-                <mattext texttype="text/plain">Minh b&#x1EA1;ch</mattext>
+                <mattext texttype="text/plain">EVKey</mattext>
               </material>
             </response_label>
             <response_label ident="2">
               <material>
-                <mattext texttype="text/plain">L&#x1B0;u tr&#x1EEF; d&#x1EEF; li&#x1EC7;u kh&#x1ED5;ng l&#x1ED3;</mattext>
+                <mattext texttype="text/plain">Winrar</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -2237,7 +1315,7 @@
       </flow_mat>
     </itemfeedback>
   </item>
-  <item ident="5054882836" title="Trong t&#x1B0;&#x1A1;ng lai, Blockchain c&#xF3; th&#x1EC3; t&#xE1;c &#x111;&#x1ED9;ng &#x111;&#x1EBF;n c&#xE1;c ng&#xE0;nh ngh&#x1EC1; n&#xE0;o" maxattempts="0">
+  <item ident="3411004915" title="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m d&#xF9;ng &#x111;&#x1EC3; m&#x1EDF; file PDF" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -2285,7 +1363,7 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="Trong t&#x1B0;&#x1A1;ng lai, Blockchain c&#xF3; th&#x1EC3; t&#xE1;c &#x111;&#x1ED9;ng &#x111;&#x1EBF;n c&#xE1;c ng&#xE0;nh ngh&#x1EC1; n&#xE0;o">
+    <presentation label="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m d&#xF9;ng &#x111;&#x1EC3; m&#x1EDF; file PDF">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
@@ -2294,22 +1372,22 @@
           <render_choice shuffle="Yes">
             <response_label ident="3">
               <material>
-                <mattext texttype="text/plain">C&#xF4;ng ngh&#x1EC7; &#xF4; t&#xF4;</mattext>
+                <mattext texttype="text/plain">Chrome</mattext>
               </material>
             </response_label>
             <response_label ident="0">
               <material>
-                <mattext texttype="text/plain">D&#x1ECB;ch v&#x1EE5; t&#xE0;i ch&#xED;nh</mattext>
+                <mattext texttype="text/plain">Foxit Reader</mattext>
               </material>
             </response_label>
             <response_label ident="1">
               <material>
-                <mattext texttype="text/plain">N&#xF4;ng nghi&#x1EC7;p</mattext>
+                <mattext texttype="text/plain">Adobe Reader</mattext>
               </material>
             </response_label>
             <response_label ident="2">
               <material>
-                <mattext texttype="text/plain">V&#x1EAD;n t&#x1EA3;i v&#xE0; Logistics</mattext>
+                <mattext texttype="text/plain">Snipping tool</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -2340,147 +1418,6 @@
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
         <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">2</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-    </resprocessing>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-  </item>
-  <item ident="9714344235" title="C&#xF4;ng ngh&#x1EC7; Blockchain c&#xF3; th&#x1EC3; s&#x1EBD; bi&#x1EBF;n m&#x1EA5;t khi n&#xE0;o?" maxattempts="0">
-    <qticomment/>
-    <duration>P0Y0M0DT0H1M0S</duration>
-    <itemmetadata>
-      <qtimetadata>
-        <qtimetadatafield/>
-        <qtimetadatafield>
-          <fieldlabel>ILIAS_VERSION</fieldlabel>
-          <fieldentry>7.10 2022-04-28</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>QUESTIONTYPE</fieldlabel>
-          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>AUTHOR</fieldlabel>
-          <fieldentry>root user</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>additional_cont_edit_mode</fieldlabel>
-          <fieldentry>default</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>externalId</fieldlabel>
-          <fieldentry>62b96929141b43.43514600</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>ilias_lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>thumb_size</fieldlabel>
-          <fieldentry/>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>feedback_setting</fieldlabel>
-          <fieldentry>2</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>singleline</fieldlabel>
-          <fieldentry>1</fieldentry>
-        </qtimetadatafield>
-      </qtimetadata>
-    </itemmetadata>
-    <presentation label="C&#xF4;ng ngh&#x1EC7; Blockchain c&#xF3; th&#x1EC3; s&#x1EBD; bi&#x1EBF;n m&#x1EA5;t khi n&#xE0;o?">
-      <flow>
-        <material>
-          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
-        </material>
-        <response_lid ident="MCSR" rcardinality="Single">
-          <render_choice shuffle="Yes">
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">Khi c&#xF3; hacker t&#x1EA5;n c&#xF4;ng</mattext>
-              </material>
-            </response_label>
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">Khi kh&#xF4;ng c&#xF2;n Internet tr&#xEA;n to&#xE0;n c&#x1EA7;u</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
-              <material>
-                <mattext texttype="text/plain">Khi kh&#xED; h&#x1EAD;u m&#xF4;i tr&#x1B0;&#x1EDD;ng thay &#x111;&#x1ED5;i</mattext>
-              </material>
-            </response_label>
-            <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">Khi c&#xF3; nhi&#x1EC1;u ng&#x1B0;&#x1EDD;i tham gia x&#xE2;y d&#x1EF1;ng h&#x1EC7; th&#x1ED1;ng theo c&#xF4;ng ngh&#x1EC7; Blockchain</mattext>
-              </material>
-            </response_label>
-          </render_choice>
-        </response_lid>
-      </flow>
-    </presentation>
-    <resprocessing>
-      <outcomes>
-        <decvar/>
-      </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">3</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">1</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">0</setvar>
       </respcondition>
       <respcondition continue="Yes">
         <conditionvar>
@@ -2519,7 +1456,7 @@
       </flow_mat>
     </itemfeedback>
   </item>
-  <item ident="8865576518" title="L&#xFD; thuy&#x1EBF;t tr&#xF2; ch&#x1A1;i trong c&#xF4;ng ngh&#x1EC7; Blockchain &#x111;&#x1B0;&#x1EE3;c hi&#x1EC3;u nh&#x1B0; th&#x1EBF; n&#xE0;o?" maxattempts="0">
+  <item ident="8608085392" title="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m ph&#xF3;ng to m&#xE0;n h&#xEC;nh trong Windows" maxattempts="0">
     <qticomment/>
     <duration>P0Y0M0DT0H1M0S</duration>
     <itemmetadata>
@@ -2567,7 +1504,7 @@
         </qtimetadatafield>
       </qtimetadata>
     </itemmetadata>
-    <presentation label="L&#xFD; thuy&#x1EBF;t tr&#xF2; ch&#x1A1;i trong c&#xF4;ng ngh&#x1EC7; Blockchain &#x111;&#x1B0;&#x1EE3;c hi&#x1EC3;u nh&#x1B0; th&#x1EBF; n&#xE0;o?">
+    <presentation label="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m ph&#xF3;ng to m&#xE0;n h&#xEC;nh trong Windows">
       <flow>
         <material>
           <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
@@ -2576,142 +1513,20 @@
           <render_choice shuffle="Yes">
             <response_label ident="3">
               <material>
-                <mattext texttype="text/plain">T&#x1EA5;t c&#x1EA3; c&#xE1;c n&#xFA;t tham gia v&#xE0;o h&#x1EC7; th&#x1ED1;ng &#x111;&#x1EC1;u ph&#x1EA3;i tu&#xE2;n th&#x1EE7; lu&#x1EAD;t ch&#x1A1;i &#x111;&#x1ED3;ng thu&#x1EAD;n (giao th&#x1EE9;c PoW, PoS,&#x2026;)</mattext>
+                <mattext texttype="text/plain">Magnifier</mattext>
               </material>
             </response_label>
             <response_label ident="0">
               <material>
-                <mattext texttype="text/plain">M&#x1ED7;i m&#x1ED9;t n&#xFA;t trong m&#x1EA1;ng &#x111;&#x1B0;&#x1EE3;c xem nh&#x1B0; m&#x1ED9;t client v&#xE0; c&#x169;ng l&#xE0; server &#x111;&#x1EC3; l&#x1B0;u tr&#x1EEF; b&#x1EA3;n sao &#x1EE9;ng d&#x1EE5;ng.</mattext>
+                <mattext texttype="text/plain">Snipping tool</mattext>
               </material>
             </response_label>
             <response_label ident="1">
               <material>
-                <mattext texttype="text/plain">&#x110;&#x1EC3; &#x111;&#x1EA3;m b&#x1EA3;o t&#xED;nh minh b&#x1EA1;ch, to&#xE0;n v&#x1EB9;n v&#xE0; ri&#xEA;ng t&#x1B0; th&#xEC; c&#xF4;ng ngh&#x1EC7; Blockchain &#x111;&#xE3; s&#x1EED; d&#x1EE5;ng public key v&#xE0; h&#xE0;m hash function.</mattext>
+                <mattext texttype="text/plain">Paint</mattext>
               </material>
             </response_label>
-          </render_choice>
-        </response_lid>
-      </flow>
-    </presentation>
-    <resprocessing>
-      <outcomes>
-        <decvar/>
-      </outcomes>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">3</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
-        <setvar action="Add">1</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">0</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-      <respcondition continue="Yes">
-        <conditionvar>
-          <varequal respident="MCSR">1</varequal>
-        </conditionvar>
-        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
-        <setvar action="Add">0</setvar>
-      </respcondition>
-    </resprocessing>
-    <itemfeedback ident="response_3" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_0" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-    <itemfeedback ident="response_1" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
-  </item>
-  <item ident="7898682837" title="Gi&#xFA;p c&#xE1;c &#x111;&#x1ED3; v&#x1EAD;t k&#x1EBF;t n&#x1ED1;i v&#x1EDB;i Internet g&#x1ECD;i l&#xE0; c&#xF4;ng ngh&#x1EC7;" maxattempts="0">
-    <qticomment/>
-    <duration>P0Y0M0DT0H1M0S</duration>
-    <itemmetadata>
-      <qtimetadata>
-        <qtimetadatafield/>
-        <qtimetadatafield>
-          <fieldlabel>ILIAS_VERSION</fieldlabel>
-          <fieldentry>7.10 2022-04-28</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>QUESTIONTYPE</fieldlabel>
-          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>AUTHOR</fieldlabel>
-          <fieldentry>root user</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>additional_cont_edit_mode</fieldlabel>
-          <fieldentry>default</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>externalId</fieldlabel>
-          <fieldentry>62b96929141b43.43514600</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>ilias_lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>lifecycle</fieldlabel>
-          <fieldentry>draft</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>thumb_size</fieldlabel>
-          <fieldentry/>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>feedback_setting</fieldlabel>
-          <fieldentry>2</fieldentry>
-        </qtimetadatafield>
-        <qtimetadatafield>
-          <fieldlabel>singleline</fieldlabel>
-          <fieldentry>1</fieldentry>
-        </qtimetadatafield>
-      </qtimetadata>
-    </itemmetadata>
-    <presentation label="Gi&#xFA;p c&#xE1;c &#x111;&#x1ED3; v&#x1EAD;t k&#x1EBF;t n&#x1ED1;i v&#x1EDB;i Internet g&#x1ECD;i l&#xE0; c&#xF4;ng ngh&#x1EC7;">
-      <flow>
-        <material>
-          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
-        </material>
-        <response_lid ident="MCSR" rcardinality="Single">
-          <render_choice shuffle="Yes">
             <response_label ident="2">
-              <material>
-                <mattext texttype="text/plain">Blockchain</mattext>
-              </material>
-            </response_label>
-            <response_label ident="3">
-              <material>
-                <mattext texttype="text/plain">AI</mattext>
-              </material>
-            </response_label>
-            <response_label ident="0">
-              <material>
-                <mattext texttype="text/plain">Internet of Things</mattext>
-              </material>
-            </response_label>
-            <response_label ident="1">
               <material>
                 <mattext texttype="text/plain">C&#x1EA3; 3 &#x111;&#xE1;p &#xE1;n tr&#xEA;n &#x111;&#x1EC1;u sai</mattext>
               </material>
@@ -2726,11 +1541,850 @@
       </outcomes>
       <respcondition continue="Yes">
         <conditionvar>
+          <varequal respident="MCSR">3</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">1</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
           <varequal respident="MCSR">2</varequal>
         </conditionvar>
         <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
         <setvar action="Add">0</setvar>
       </respcondition>
+    </resprocessing>
+    <itemfeedback ident="response_3" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+  <item ident="8114731286" title="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m d&#xF9;ng &#x111;&#x1EC3; t&#xED;nh to&#xE1;n + - * /" maxattempts="0">
+    <qticomment/>
+    <duration>P0Y0M0DT0H1M0S</duration>
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield/>
+        <qtimetadatafield>
+          <fieldlabel>ILIAS_VERSION</fieldlabel>
+          <fieldentry>7.10 2022-04-28</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>QUESTIONTYPE</fieldlabel>
+          <fieldentry>MULTIPLE CHOICE QUESTION</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>AUTHOR</fieldlabel>
+          <fieldentry>root user</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>additional_cont_edit_mode</fieldlabel>
+          <fieldentry>default</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>externalId</fieldlabel>
+          <fieldentry>62df9a7b5b37e2.17133519</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>ilias_lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>thumb_size</fieldlabel>
+          <fieldentry/>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>feedback_setting</fieldlabel>
+          <fieldentry>1</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>singleline</fieldlabel>
+          <fieldentry>0</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation label="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m d&#xF9;ng &#x111;&#x1EC3; t&#xED;nh to&#xE1;n + - * /">
+      <flow>
+        <material>
+          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
+        </material>
+        <response_lid ident="MCSR" rcardinality="Multiple">
+          <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">Paint</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">Calculator</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">Excel</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2">
+              <material>
+                <mattext texttype="text/plain">Camtasia</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar/>
+      </outcomes>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">3</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">1</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">2</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="response_3" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+  <item ident="4741548180" title="Winrar l&#xE0; ph&#x1EA7;n m&#x1EC1;m d&#xF9;ng &#x111;&#x1EC3;" maxattempts="0">
+    <qticomment/>
+    <duration>P0Y0M0DT0H1M0S</duration>
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield/>
+        <qtimetadatafield>
+          <fieldlabel>ILIAS_VERSION</fieldlabel>
+          <fieldentry>7.10 2022-04-28</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>QUESTIONTYPE</fieldlabel>
+          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>AUTHOR</fieldlabel>
+          <fieldentry>root user</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>additional_cont_edit_mode</fieldlabel>
+          <fieldentry>default</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>externalId</fieldlabel>
+          <fieldentry>62b96929141b43.43514600</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>ilias_lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>thumb_size</fieldlabel>
+          <fieldentry/>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>feedback_setting</fieldlabel>
+          <fieldentry>2</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>singleline</fieldlabel>
+          <fieldentry>1</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation label="Winrar l&#xE0; ph&#x1EA7;n m&#x1EC1;m d&#xF9;ng &#x111;&#x1EC3;">
+      <flow>
+        <material>
+          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
+        </material>
+        <response_lid ident="MCSR" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">N&#xE9;n c&#xE1;c t&#x1EAD;p tin l&#x1EA1;i</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">&#x110;&#x1EB7;t password b&#x1EA3;o m&#x1EAD;t</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">Gi&#x1EA3;i n&#xE9;n c&#xE1;c file .rar .zip</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2">
+              <material>
+                <mattext texttype="text/plain">T&#x1EA5;t c&#x1EA3; &#x111;&#xE1;p &#xE1;n tr&#xEA;n &#x111;&#x1EC1;u &#x111;&#xFA;ng</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar/>
+      </outcomes>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">3</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">1</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">2</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="response_3" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+  <item ident="6212952887" title="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m chuy&#xEA;n d&#x1EE5;ng cho d&#xE2;n l&#x1EAD;p tr&#xEC;nh" maxattempts="0">
+    <qticomment/>
+    <duration>P0Y0M0DT0H1M0S</duration>
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield/>
+        <qtimetadatafield>
+          <fieldlabel>ILIAS_VERSION</fieldlabel>
+          <fieldentry>7.10 2022-04-28</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>QUESTIONTYPE</fieldlabel>
+          <fieldentry>MULTIPLE CHOICE QUESTION</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>AUTHOR</fieldlabel>
+          <fieldentry>root user</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>additional_cont_edit_mode</fieldlabel>
+          <fieldentry>default</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>externalId</fieldlabel>
+          <fieldentry>62df9a7b5b37e2.17133519</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>ilias_lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>thumb_size</fieldlabel>
+          <fieldentry/>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>feedback_setting</fieldlabel>
+          <fieldentry>1</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>singleline</fieldlabel>
+          <fieldentry>0</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation label="&#x110;&#xE2;u l&#xE0; ph&#x1EA7;n m&#x1EC1;m chuy&#xEA;n d&#x1EE5;ng cho d&#xE2;n l&#x1EAD;p tr&#xEC;nh">
+      <flow>
+        <material>
+          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
+        </material>
+        <response_lid ident="MCSR" rcardinality="Multiple">
+          <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">Netbean</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">Eclipse</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">Adobe After Effect</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2">
+              <material>
+                <mattext texttype="text/plain">Autocad</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar/>
+      </outcomes>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">3</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">1</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">2</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="response_3" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+  <item ident="9201045810" title="&#x1AF;u &#x111;i&#x1EC3;m khi s&#x1EED; d&#x1EE5;ng ph&#x1EA7;n m&#x1EC1;m c&#xF3; b&#x1EA3;n quy&#x1EC1;n?" maxattempts="0">
+    <qticomment/>
+    <duration>P0Y0M0DT0H1M0S</duration>
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield/>
+        <qtimetadatafield>
+          <fieldlabel>ILIAS_VERSION</fieldlabel>
+          <fieldentry>7.10 2022-04-28</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>QUESTIONTYPE</fieldlabel>
+          <fieldentry>MULTIPLE CHOICE QUESTION</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>AUTHOR</fieldlabel>
+          <fieldentry>root user</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>additional_cont_edit_mode</fieldlabel>
+          <fieldentry>default</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>externalId</fieldlabel>
+          <fieldentry>62df9a7b5b37e2.17133519</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>ilias_lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>thumb_size</fieldlabel>
+          <fieldentry/>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>feedback_setting</fieldlabel>
+          <fieldentry>1</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>singleline</fieldlabel>
+          <fieldentry>0</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation label="&#x1AF;u &#x111;i&#x1EC3;m khi s&#x1EED; d&#x1EE5;ng ph&#x1EA7;n m&#x1EC1;m c&#xF3; b&#x1EA3;n quy&#x1EC1;n?">
+      <flow>
+        <material>
+          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
+        </material>
+        <response_lid ident="MCSR" rcardinality="Multiple">
+          <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">&#x110;&#x1B0;&#x1EE3;c c&#x1EAD;p nh&#x1EAD;t th&#x1B0;&#x1EDD;ng xuy&#xEA;n v&#xE0; &#x111;&#x1EA7;y &#x111;&#x1EE7;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">S&#x1EED; d&#x1EE5;ng &#x111;&#x1B0;&#x1EE3;c t&#x1EA5;t c&#x1EA3; c&#xE1;c t&#xED;nh n&#x103;ng c&#x1EE7;a ph&#x1EA7;n m&#x1EC1;m</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">&#x110;&#x1B0;&#x1EE3;c quy&#x1EC1;n ch&#x1EC9;nh s&#x1EED;a m&#xE3; ngu&#x1ED3;n ph&#x1EA7;n m&#x1EC1;m</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2">
+              <material>
+                <mattext texttype="text/plain">&#x110;&#x1B0;&#x1EE3;c quy&#x1EC1;n b&#xE1;n ph&#x1EA7;n m&#x1EC1;m cho ng&#x1B0;&#x1EDD;i kh&#xE1;c</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar/>
+      </outcomes>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">3</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">1</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">2</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="response_3" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+  <item ident="1199287438" title="Ph&#x1EA7;n m&#x1EC1;m &#x111;&#x1ED9;c h&#x1EA1;i chia ra c&#xE1;c lo&#x1EA1;i n&#xE0;o" maxattempts="0">
+    <qticomment/>
+    <duration>P0Y0M0DT0H1M0S</duration>
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield/>
+        <qtimetadatafield>
+          <fieldlabel>ILIAS_VERSION</fieldlabel>
+          <fieldentry>7.10 2022-04-28</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>QUESTIONTYPE</fieldlabel>
+          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>AUTHOR</fieldlabel>
+          <fieldentry>root user</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>additional_cont_edit_mode</fieldlabel>
+          <fieldentry>default</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>externalId</fieldlabel>
+          <fieldentry>62b96929141b43.43514600</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>ilias_lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>thumb_size</fieldlabel>
+          <fieldentry/>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>feedback_setting</fieldlabel>
+          <fieldentry>2</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>singleline</fieldlabel>
+          <fieldentry>1</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation label="Ph&#x1EA7;n m&#x1EC1;m &#x111;&#x1ED9;c h&#x1EA1;i chia ra c&#xE1;c lo&#x1EA1;i n&#xE0;o">
+      <flow>
+        <material>
+          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
+        </material>
+        <response_lid ident="MCSR" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">Spyware</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">Worm</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">Trojan</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2">
+              <material>
+                <mattext texttype="text/plain">T&#x1EA5;t c&#x1EA3; &#x111;&#xE1;p &#xE1;n tr&#xEA;n &#x111;&#x1EC1;u &#x111;&#xFA;ng</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar/>
+      </outcomes>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">3</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">1</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">2</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="response_3" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+  <item ident="3564587432" title="Worm l&#xE0; g&#xEC;?" maxattempts="0">
+    <qticomment/>
+    <duration>P0Y0M0DT0H1M0S</duration>
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield/>
+        <qtimetadatafield>
+          <fieldlabel>ILIAS_VERSION</fieldlabel>
+          <fieldentry>7.10 2022-04-28</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>QUESTIONTYPE</fieldlabel>
+          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>AUTHOR</fieldlabel>
+          <fieldentry>root user</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>additional_cont_edit_mode</fieldlabel>
+          <fieldentry>default</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>externalId</fieldlabel>
+          <fieldentry>62b96929141b43.43514600</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>ilias_lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>thumb_size</fieldlabel>
+          <fieldentry/>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>feedback_setting</fieldlabel>
+          <fieldentry>2</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>singleline</fieldlabel>
+          <fieldentry>1</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation label="Worm l&#xE0; g&#xEC;?">
+      <flow>
+        <material>
+          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
+        </material>
+        <response_lid ident="MCSR" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">Ph&#x1EA7;n m&#x1EC1;m gi&#xE1;n &#x111;i&#x1EC7;p, nh&#x1B0; t&#xEA;n cho th&#x1EA5;y, gi&#xFA;p tin t&#x1EB7;c theo d&#xF5;i c&#xE1;c h&#x1EC7; th&#x1ED1;ng v&#xE0; ng&#x1B0;&#x1EDD;i d&#xF9;ng</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">Worm kh&#xF4;ng c&#x1EA7;n b&#x1EA5;t k&#x1EF3; h&#xE0;nh &#x111;&#x1ED9;ng n&#xE0;o c&#x1EE7;a ng&#x1B0;&#x1EDD;i d&#xF9;ng cu&#x1ED1;i nh&#x1B0; v&#x1EAD;y.&#xA0; N&#xF3; ch&#x1EC9; &#x111;&#x1A1;n gi&#x1EA3;n l&#xE0; t&#x1EF1; lan truy&#x1EC1;n, t&#x1EF1; sao ch&#xE9;p trong qu&#xE1; tr&#xEC;nh v&#xE0; ph&#xE1; h&#x1EE7;y c&#xE1;c h&#x1EC7; th&#x1ED1;ng, thi&#x1EBF;t b&#x1ECB;, m&#x1EA1;ng v&#xE0; c&#x1A1; s&#x1EDF; h&#x1EA1; t&#x1EA7;ng &#x111;&#x1B0;&#x1EE3;c k&#x1EBF;t n&#x1ED1;i</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">N&#xF3; s&#x1EBD; m&#xE3; h&#xF3;a c&#xE1;c file quan tr&#x1ECD;ng trong m&#xE1;y t&#xED;nh c&#x1EE7;a m&#x1ED9;t h&#x1EC7; th&#x1ED1;ng, v&#xE0; y&#xEA;u c&#x1EA7;u ti&#x1EC1;n chu&#x1ED9;c &#x111;&#x1EC3; gi&#x1EA3;i m&#xE3;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2">
+              <material>
+                <mattext texttype="text/plain">L&#xE0; ph&#x1EA7;n m&#x1EC1;m di&#x1EC7;t Virus</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar/>
+      </outcomes>
       <respcondition continue="Yes">
         <conditionvar>
           <varequal respident="MCSR">3</varequal>
@@ -2752,14 +2406,14 @@
         <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
         <setvar action="Add">0</setvar>
       </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">2</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
     </resprocessing>
-    <itemfeedback ident="response_2" view="All">
-      <flow_mat>
-        <material>
-          <mattext texttype="text/plain"/>
-        </material>
-      </flow_mat>
-    </itemfeedback>
     <itemfeedback ident="response_3" view="All">
       <flow_mat>
         <material>
@@ -2775,6 +2429,295 @@
       </flow_mat>
     </itemfeedback>
     <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+  <item ident="1650757892" title="&#x110;&#xE2;u kh&#xF4;ng ph&#x1EA3;i l&#xE0; ph&#x1EA7;n m&#x1EC1;m b&#x1EA3;o m&#x1EAD;t" maxattempts="0">
+    <qticomment/>
+    <duration>P0Y0M0DT0H1M0S</duration>
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield/>
+        <qtimetadatafield>
+          <fieldlabel>ILIAS_VERSION</fieldlabel>
+          <fieldentry>7.10 2022-04-28</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>QUESTIONTYPE</fieldlabel>
+          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>AUTHOR</fieldlabel>
+          <fieldentry>root user</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>additional_cont_edit_mode</fieldlabel>
+          <fieldentry>default</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>externalId</fieldlabel>
+          <fieldentry>62b96929141b43.43514600</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>ilias_lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>thumb_size</fieldlabel>
+          <fieldentry/>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>feedback_setting</fieldlabel>
+          <fieldentry>2</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>singleline</fieldlabel>
+          <fieldentry>1</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation label="&#x110;&#xE2;u kh&#xF4;ng ph&#x1EA3;i l&#xE0; ph&#x1EA7;n m&#x1EC1;m b&#x1EA3;o m&#x1EAD;t">
+      <flow>
+        <material>
+          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
+        </material>
+        <response_lid ident="MCSR" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">Kaspersky</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">McAfee</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">Ccleaner</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2">
+              <material>
+                <mattext texttype="text/plain">Bkav</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar/>
+      </outcomes>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">3</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">1</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">2</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="response_3" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+  <item ident="7076391321" title="Ransomware l&#xE0; g&#xEC;?" maxattempts="0">
+    <qticomment/>
+    <duration>P0Y0M0DT0H1M0S</duration>
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield/>
+        <qtimetadatafield>
+          <fieldlabel>ILIAS_VERSION</fieldlabel>
+          <fieldentry>7.10 2022-04-28</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>QUESTIONTYPE</fieldlabel>
+          <fieldentry>SINGLE CHOICE QUESTION</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>AUTHOR</fieldlabel>
+          <fieldentry>root user</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>additional_cont_edit_mode</fieldlabel>
+          <fieldentry>default</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>externalId</fieldlabel>
+          <fieldentry>62b96929141b43.43514600</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>ilias_lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>lifecycle</fieldlabel>
+          <fieldentry>draft</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>thumb_size</fieldlabel>
+          <fieldentry/>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>feedback_setting</fieldlabel>
+          <fieldentry>2</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>singleline</fieldlabel>
+          <fieldentry>1</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation label="Ransomware l&#xE0; g&#xEC;?">
+      <flow>
+        <material>
+          <mattext texttype="text/plain">H&#xE3;y ch&#x1ECD;n &#x111;&#xE1;p &#xE1;n &#x111;&#xFA;ng</mattext>
+        </material>
+        <response_lid ident="MCSR" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3">
+              <material>
+                <mattext texttype="text/plain">Kh&#xF4;ng l&#xE0; g&#xEC; ngo&#xE0;i vi&#x1EC7;c c&#x1ED1; g&#x1EAF;ng &#x111;&#x1B0;a ng&#x1B0;&#x1EDD;i d&#xF9;ng &#x111;&#x1EBF;n qu&#x1EA3;ng c&#xE1;o &#x111;&#x1ED9;c h&#x1EA1;i kh&#xF4;ng mong mu&#x1ED1;n</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0">
+              <material>
+                <mattext texttype="text/plain">Ph&#x1EA7;n m&#x1EC1;m b&#x1EA3;o m&#x1EAD;t, gi&#xFA;p m&#xE1;y t&#xED;nh ch&#x1ED1;ng l&#x1EA1;i v&#x1EDB;i c&#xE1;c cu&#x1ED9;c t&#x1EA5;n c&#xF4;ng</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1">
+              <material>
+                <mattext texttype="text/plain">N&#xF3; s&#x1EBD; m&#xE3; h&#xF3;a c&#xE1;c file quan tr&#x1ECD;ng trong m&#xE1;y t&#xED;nh c&#x1EE7;a m&#x1ED9;t h&#x1EC7; th&#x1ED1;ng, v&#xE0; y&#xEA;u c&#x1EA7;u ti&#x1EC1;n chu&#x1ED9;c &#x111;&#x1EC3; gi&#x1EA3;i m&#xE3;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2">
+              <material>
+                <mattext texttype="text/plain">Trojan ch&#x1EE7; y&#x1EBF;u &#x111;&#x1EBF;n qua email ho&#x1EB7;c l&#xE2;y lan t&#x1EEB; c&#xE1;c trang web b&#x1ECB; nhi&#x1EC5;m m&#xE0; ng&#x1B0;&#x1EDD;i d&#xF9;ng truy c&#x1EAD;p. H&#x1ECD; ch&#x1EC9; l&#xE0;m vi&#x1EC7;c khi n&#x1EA1;n nh&#xE2;n th&#x1EF1;c hi&#x1EC7;n n&#xF3;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar/>
+      </outcomes>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">3</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_3"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">0</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_0"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">1</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_1"/>
+        <setvar action="Add">1</setvar>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="MCSR">2</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="response_2"/>
+        <setvar action="Add">0</setvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="response_3" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_0" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_1" view="All">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="response_2" view="All">
       <flow_mat>
         <material>
           <mattext texttype="text/plain"/>
